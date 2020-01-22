@@ -55,15 +55,15 @@ def total_gross(source)
   gross
 end
 
-# def gross_for_director(director_data)
-#   row = 0
-#   total = 0
-#   while row < director_data[:movies].length
-#     total += director_data[:movies][row][:worldwide_gross]
-#     row += 1
-#   end
-#   total
-# end
+def gross_for_director(director_data)
+  row = 0
+  total = 0
+  while row < director_data[:movies].length
+    total += director_data[:movies][row][:worldwide_gross]
+    row += 1
+  end
+  total
+end
 
 
 # def directors_totals(nds)
