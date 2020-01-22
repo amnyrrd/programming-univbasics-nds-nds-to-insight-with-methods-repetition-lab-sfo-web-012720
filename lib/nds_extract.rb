@@ -66,20 +66,20 @@ def gross_for_director(director_data)
 end
 
 
-# def directors_totals(nds)
-#   result = {}
-#   row = 0
-#   while row < directors_database.length do
-#     column = 0
-#     totals = 0
-#     while column < directors_database[row][:movies].length do
-#         totals += directors_database[row][:movies][column][:worldwide_gross]
-#         column += 1
-#     end
-#       result.store(directors_database[row][:name], totals)
-#       row += 1
-#   end
-#   result
-# end
+def directors_totals(nds)
+  result = {}
+  row = 0
+  while row < directors_database.length do
+    column = 0
+    totals = 0
+    while column < directors_database[row][:movies].length do
+        totals += directors_database[row][:movies][column][:worldwide_gross]
+        column += 1
+    end
+      result.store(directors_database[row][:name], totals)
+      row += 1
+  end
+  result
+end
 
 
