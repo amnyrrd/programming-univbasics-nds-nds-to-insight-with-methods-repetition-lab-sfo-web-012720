@@ -50,10 +50,10 @@ def total_gross(source)
   while row < source.length do
     director = source[row]
     totals = directors_totals(director)
-    gross += totals.values
+    # gross += totals.values
     row += 1
   end
-  gross
+  totals.values.sum
 end
 
 def gross_for_director(director_data)
