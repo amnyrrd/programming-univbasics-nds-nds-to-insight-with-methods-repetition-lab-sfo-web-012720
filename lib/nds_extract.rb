@@ -49,7 +49,7 @@ def total_gross(source)
   row = 0
   while row < source.length do
     director = source[row]
-    gross << directors_totals(director)[:worldwide_gross]
+    gross += directors_totals(director)[:worldwide_gross]
     row += 1
   end
   gross
