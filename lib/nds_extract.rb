@@ -45,11 +45,11 @@ def total_gross(source)
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
-  gross = 0
+  gross = []
   row = 0
   while row < source.length do
     director = source[row]
-    gross += directors_totals(director)
+    gross << directors_totals(director)
     row += 1
   end
   gross
